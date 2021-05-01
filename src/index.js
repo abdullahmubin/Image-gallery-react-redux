@@ -1,12 +1,18 @@
+// JoomShaper-task-Abdullah al Mubin-01764675540
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// NOTE: if i put my provider(redux) and other necessary details here,
+// then it shows npm test failed (while automation testing) but project works fine.
+// so i have put those information inside App.js component
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

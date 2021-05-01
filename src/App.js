@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
+
+// JoomShaper-task-Abdullah al Mubin-01764675540
+
+import GalleryInfo from './component/galleryInfo';
+import { Provider } from 'react-redux';
+import store from './store/store';
+
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import { DndProvider } from 'react-dnd';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <DndProvider backend={HTML5Backend}>
+        <div className="App">
+          <GalleryInfo />
+        </div>
+      </DndProvider>
+    </Provider>
+
   );
 }
+
 
 export default App;
