@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing renders when there are no items: <div /> 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="main-container"
+  >
+    <div
+      className="media-panel-container"
+    >
+      <div>
+        <p>
+          Media Panel
+        </p>
+      </div>
+    </div>
+    <div
+      className="canvas-container"
+    >
+      <div>
+        <div
+          className="drop-item-container"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
